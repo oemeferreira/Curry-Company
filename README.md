@@ -8,41 +8,41 @@ Como Cientista de Dados, a missão é criar soluções de dados para otimizar as
 A Cury Company opera por meio de um modelo de negócios denominado Marketplace, intermediando transações entre restaurantes, entregadores e consumidores. Para acompanhar o crescimento dessas operações, o CEO expressa o desejo de monitorar diversas métricas cruciais.
 
 ## Do ponto de vista da empresa:
-1. Número diário de pedidos.
-2. Número semanal de pedidos.
-3. Distribuição dos pedidos por tipo de tráfego.
-4. Comparação do volume de pedidos por cidade e tipo de tráfego.
-5. Quantidade de pedidos por entregador semanal.
-6. Localização central de cada cidade por tipo de tráfego.
+  1. Número diário de pedidos.
+  2. Número semanal de pedidos.
+  3. Distribuição dos pedidos por tipo de tráfego.
+  4. Comparação do volume de pedidos por cidade e tipo de tráfego.
+  5. Quantidade de pedidos por entregador semanal.
+  6. Localização central de cada cidade por tipo de tráfego.
 
 ## Do ponto de vista do entregador:
-1. Faixa etária dos entregadores.
-2. Condição dos veículos (melhor e pior).
-3. Avaliação média por entregador.
-4. Avaliação média e desvio padrão por tipo de tráfego.
-5. Avaliação média e desvio padrão por condições climáticas.
-6. Top 10 entregadores mais rápidos e lentos por cidade.
+  1. Faixa etária dos entregadores.
+  2. Condição dos veículos (melhor e pior).
+  3. Avaliação média por entregador.
+  4. Avaliação média e desvio padrão por tipo de tráfego.
+  5. Avaliação média e desvio padrão por condições climáticas.
+  6. Top 10 entregadores mais rápidos e lentos por cidade.
 
 ## Do ponto de vista dos restaurantes:
-1. Quantidade de entregadores únicos.
-2. Distância média entre restaurantes e locais de entrega.
-3. Tempo médio e desvio padrão de entrega por cidade.
-4. Tempo médio e desvio padrão de entrega por cidade e tipo de pedido.
-5. Tempo médio e desvio padrão de entrega por cidade e tipo de tráfego.
-6. Tempo médio de entrega durante festivais.
-7. O objetivo do projeto é criar gráficos e tabelas que apresentem essas métricas de forma clara e concisa para o CEO.
+  1. Quantidade de entregadores únicos.
+  2. Distância média entre restaurantes e locais de entrega.
+  3. Tempo médio e desvio padrão de entrega por cidade.
+  4. Tempo médio e desvio padrão de entrega por cidade e tipo de pedido.
+  5. Tempo médio e desvio padrão de entrega por cidade e tipo de tráfego.
+  6. Tempo médio de entrega durante festivais.
+  7. O objetivo do projeto é criar gráficos e tabelas que apresentem essas métricas de forma clara e concisa para o CEO.
 
 # 2. Premissas para Análise
-1. A análise utiliza dados do período entre 11/02/2022 e 06/04/2022.
-2. O modelo de negócios considerado é o Marketplace.
-3. Três principais visões do negócio foram identificadas: Visão Transacional de Pedidos, Visão de Restaurantes e Visão de Entregadores.
+  1. A análise utiliza dados do período entre 11/02/2022 e 06/04/2022.
+  2. O modelo de negócios considerado é o Marketplace.
+  3. Três principais visões do negócio foram identificadas: Visão Transacional de Pedidos, Visão de Restaurantes e Visão de Entregadores.
 
 # 3. Estratégia de Solução
 Desenvolvemos um painel estratégico com base nas métricas que refletem as três principais visões do modelo de negócios da empresa:
 
-1. Visão do crescimento da empresa
-2. Visão do crescimento dos restaurantes
-3. Visão do crescimento dos entregadores
+  1. Visão do crescimento da empresa
+  2. Visão do crescimento dos restaurantes
+  3. Visão do crescimento dos entregadores
 
 Cada visão é representada pelo seguinte conjunto de métricas.
 
