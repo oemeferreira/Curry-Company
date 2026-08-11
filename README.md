@@ -1,91 +1,92 @@
-# 1. Problema de Negócios
-A Cury Company, uma empresa de tecnologia especializada em conectar restaurantes, entregadores e clientes, enfrenta a necessidade de aprimorar a visibilidade dos principais indicadores de crescimento. 
+# Curry Company — Painel Operacional de Entregas
 
-Mesmo com um aumento nas entregas, o CEO precisa de uma compreensão abrangente dos KPIs de expansão da empresa. 
+Painel estratégico que consolida os KPIs de um marketplace de delivery em uma única ferramenta, organizado nas três visões que o negócio realmente usa para decidir: **empresa**, **restaurantes** e **entregadores**.
 
-Como Cientista de Dados, a missão é criar soluções de dados para otimizar as operações de entrega e, inicialmente, consolidar os principais KPIs estratégicos em uma ferramenta única para facilitar as decisões do CEO.
+### [→ Acessar o painel](https://curry-company-project.streamlit.app/)
 
-A Cury Company opera por meio de um modelo de negócios denominado Marketplace, intermediando transações entre restaurantes, entregadores e consumidores. Para acompanhar o crescimento dessas operações, o CEO expressa o desejo de monitorar diversas métricas cruciais.
+---
 
-## Do ponto de vista da empresa:
-  1. Número diário de pedidos.
-  2. Número semanal de pedidos.
-  3. Distribuição dos pedidos por tipo de tráfego.
-  4. Comparação do volume de pedidos por cidade e tipo de tráfego.
-  5. Quantidade de pedidos por entregador semanal.
-  6. Localização central de cada cidade por tipo de tráfego.
+## Problema de negócio
 
-## Do ponto de vista do entregador:
-  1. Faixa etária dos entregadores.
-  2. Condição dos veículos (melhor e pior).
-  3. Avaliação média por entregador.
-  4. Avaliação média e desvio padrão por tipo de tráfego.
-  5. Avaliação média e desvio padrão por condições climáticas.
-  6. Top 10 entregadores mais rápidos e lentos por cidade.
+A Curry Company conecta restaurantes, entregadores e clientes em um modelo de marketplace. O volume de entregas cresce, mas o CEO não tem visibilidade dos indicadores que explicam esse crescimento — os números existem espalhados e nenhuma leitura consolidada chega até ele.
 
-## Do ponto de vista dos restaurantes:
-  1. Quantidade de entregadores únicos.
-  2. Distância média entre restaurantes e locais de entrega.
-  3. Tempo médio e desvio padrão de entrega por cidade.
-  4. Tempo médio e desvio padrão de entrega por cidade e tipo de pedido.
-  5. Tempo médio e desvio padrão de entrega por cidade e tipo de tráfego.
-  6. Tempo médio de entrega durante festivais.
-  7. O objetivo do projeto é criar gráficos e tabelas que apresentem essas métricas de forma clara e concisa para o CEO.
+A missão: transformar a base operacional em um painel único, capaz de responder às perguntas de crescimento sem depender de alguém abrir um notebook.
 
-# 2. Premissas para Análise
-  1. A análise utiliza dados do período entre 11/02/2022 e 06/04/2022.
-  2. O modelo de negócios considerado é o Marketplace.
-  3. Três principais visões do negócio foram identificadas: Visão Transacional de Pedidos, Visão de Restaurantes e Visão de Entregadores.
+---
 
-# 3. Estratégia de Solução
-Desenvolvemos um painel estratégico com base nas métricas que refletem as três principais visões do modelo de negócios da empresa:
+## Premissas
 
-  1. Visão do crescimento da empresa
-  2. Visão do crescimento dos restaurantes
-  3. Visão do crescimento dos entregadores
+- Dados do período entre **11/02/2022 e 06/04/2022**
+- Modelo de negócio considerado: marketplace
+- Três visões de negócio, cada uma com seu próprio conjunto de métricas
 
-Cada visão é representada pelo seguinte conjunto de métricas.
+---
 
-### 1. Visão do crescimento da empresa
-  1. Pedidos diários
-  2. Percentual de pedidos por condições de tráfego
-  3. Quantidade de pedidos por tipo e por cidade
-  4. Pedidos semanais
-  5. Quantidade de pedidos por tipo de entrega
-  6. Quantidade de pedidos por condições de tráfego e tipo de cidade
-  7. Visão do Crescimento dos Restaurantes
+## O painel
 
-### 2. Visão do crescimento dos restaurantes
-  1. Quantidade de pedidos únicos
-  2. Distância média percorrida
-  3. Tempo médio de entrega durante festivais e dias normais
-  4. Desvio padrão do tempo de entrega durante festivais e dias normais
-  5. Tempo de entrega médio por cidade
-  6. Distribuição do tempo médio de entrega por cidade
-  7. Tempo médio de entrega por tipo de pedido
-  8. Visão do Crescimento dos Entregadores
+| Visão | O que responde |
+|---|---|
+| **Empresa** | Pedidos diários e semanais, distribuição por condição de tráfego, volume por tipo de cidade, pedidos por tipo de entrega e localização central por cidade |
+| **Restaurantes** | Entregadores únicos, distância média percorrida, tempo médio e desvio padrão de entrega por cidade e por tipo de pedido, comparação entre festivais e dias normais |
+| **Entregadores** | Faixa etária, condição dos veículos, avaliação média por entregador, por tráfego e por clima, e os entregadores mais rápidos por cidade |
 
-### 3. Visão do crescimento dos entregadores
-  1. Idade do entregador mais velho e mais novo
-  2. Avaliação do melhor e pior veículo
-  3. Avaliação média por entregador
-  4. Avaliação média por condições de tráfego
-  5. Avaliação média por condições climáticas
-  6. Tempo médio do entregador mais rápido
-  7. Tempo médio do entregador mais rápido por cidade
+Cada visão é uma página independente em `pages/`, com filtros de data e de condição de trânsito aplicados na barra lateral.
 
-# 4. Principais Insights de Dados
-  1. A sazonalidade da quantidade de pedidos é diária, com uma variação de aproximadamente 10% entre dias consecutivos.
-  2. Cidades do tipo Semi-Urban não apresentam condições baixas de tráfego.
-  3. As maiores variações no tempo de entrega ocorrem durante condições climáticas ensolaradas.
-     
-# 5. Produto Final do Projeto
-Desenvolvemos um painel online, hospedado na nuvem e acessível por qualquer dispositivo conectado à internet. O painel pode ser acessado aqui. [https://curry-company-project.streamlit.app/](https://curry-company-project.streamlit.app/)
+---
 
-# 6. Conclusão
-O projeto visa fornecer um conjunto de gráficos e tabelas para apresentar métricas de forma eficaz ao CEO. A análise revelou um crescimento no número de pedidos entre as semanas 06 e 13 de 2022.
+## Principais insights
 
-# 7. Próximos Passos
-  1. Reduzir o número de métricas para simplificar a visualização.
-  2. Introduzir novos filtros para aprimorar a análise.
-  3. Adicionar novas visões de negócio para uma compreensão mais abrangente.
+1. **A sazonalidade dos pedidos é diária**, com variação de aproximadamente 10% entre dias consecutivos — o planejamento de escala precisa ser diário, não semanal.
+2. **Cidades do tipo Semi-Urban não registram condições baixas de tráfego**, o que muda a expectativa de tempo de entrega nessas praças.
+3. **As maiores variações no tempo de entrega ocorrem em clima ensolarado**, resultado contraintuitivo que merece investigação: o esperado seria o oposto.
+
+O volume de pedidos cresceu entre as semanas 06 e 13 de 2022.
+
+---
+
+## Como rodar
+
+```bash
+pip install -r requirements.txt
+streamlit run Home.py
+```
+
+O painel sobe em `http://localhost:8501`.
+
+Requer **Python 3.9 ou superior**.
+
+---
+
+## Estrutura
+
+```
+Home.py                    pagina inicial e descricao do painel
+pages/
+  visao_empresa.py         KPIs de crescimento da operacao
+  visao_restaurantes.py    tempo e distancia de entrega
+  visao_entregadores.py    avaliacoes e performance
+dataset/train.csv          base operacional
+```
+
+---
+
+## Tecnologias
+
+Python · Pandas · NumPy · Streamlit · Plotly · Folium · Haversine
+
+O cálculo de distância entre restaurante e local de entrega usa a fórmula de **Haversine** sobre as coordenadas de origem e destino.
+
+---
+
+## Próximos passos
+
+1. Reduzir o número de métricas por tela — hoje há densidade demais para leitura rápida
+2. Introduzir novos filtros de recorte
+3. Adicionar visões de negócio complementares
+
+---
+
+## Observações
+
+- Os dados vêm de uma base pública de exemplo. Nenhum número aqui representa operação real de empresa.
+- Projeto desenvolvido durante a formação em análise de dados da Comunidade DS.
