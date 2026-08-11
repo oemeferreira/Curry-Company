@@ -1,9 +1,16 @@
-folium==0.15.0
+# Versoes alinhadas com o rangohub-project, o dashboard irmao, que roda em
+# Python 3.11 e 3.12.
+#
+# As versoes anteriores (numpy 1.21.5, pandas 1.4.2, matplotlib 3.5.1) so
+# publicam wheel ate cp310. Em Python 3.11+ o pip caia para compilacao a
+# partir do fonte e a instalacao falhava.
+
+folium==0.15.1
 haversine==2.8.0
-matplotlib==3.5.1
-numpy==1.21.5
-pandas==1.4.2
+matplotlib==3.8.0
+numpy==1.26.2
+pandas==2.1.4
 Pillow==10.1.0
-plotly==5.6.0
-streamlit==1.28.1
-streamlit_folium==0.15.1
+plotly==5.18.0
+streamlit==1.28.2
+streamlit_folium==0.17.4
